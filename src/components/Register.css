@@ -1,0 +1,19 @@
+/* reg.css */
+
+
+
+/* Adjust the position of the eye icon */
+.eye-icon {
+   padding-bottom: 25px;
+    position: absolute;
+    right: 15px; /* Slightly more space from the right */
+    top: 50%; /* Center vertically */
+
+    font-size: 1.4rem; /* Larger icon for better visibility */
+    color: #888; /* Light grey color */
+    cursor: pointer;
+
+}
+
+
+
