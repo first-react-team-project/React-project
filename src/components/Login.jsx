@@ -28,7 +28,7 @@ const Login = () => {
         formData.password
       );
       console.log("User logged in:", userCredential.user);
-      navigate("/dashboard");
+      navigate("/home");
     } catch (error) {
       setError(error.message);
       console.error("Error logging in:", error.message);
@@ -39,7 +39,7 @@ const Login = () => {
     const provider = new GoogleAuthProvider();
     try {
       await signInWithPopup(auth, provider);
-      navigate("/");
+      navigate("/home");
     } catch (error) {
       setError(error.message);
       console.error("Google login error:", error.message);
@@ -83,6 +83,7 @@ const Login = () => {
             />
           </div>
           <button
+         
             type="submit"
             className="w-full bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition-all duration-300 transform hover:scale-105"
           >
