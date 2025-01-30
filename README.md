@@ -9,3 +9,4 @@ Currently, two official plugins are available:
 
 https://www.figma.com/design/jlkh3LT4bt66NiueZ9mZ9Z/ReactProject?t=c1xXEfpvyHJekj1m-0
 
+https://trello.com/b/R6izIQf6/project
