@@ -1,4 +1,4 @@
-import { useState } from ''
+/*import { useState } from 'react'
 
 function App() {
 
@@ -6,6 +6,19 @@ function App() {
     <>
 
     </>
+  )
+}
+
+export default App*/
+
+
+import UserProfilePage from './UserProfilePage'
+
+function App() {
+  return (
+    <div>
+    
+    </div>
   )
 }
 
