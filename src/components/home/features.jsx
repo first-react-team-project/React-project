@@ -9,7 +9,7 @@ const Features = () => {
           {/* Feature 1: Task Organization */}
           <div className="box quality">
             <div className="img-holder">
-              <img decoding="async" src="imgs/features-01.jpg" alt="Task Organization" />
+              <img decoding="async" src="src/components/img/pexels-photo-7439127.jpeg" alt="Task Organization" />
             </div>
             <h2>Task Organization</h2>
             <p>
@@ -21,7 +21,7 @@ const Features = () => {
           {/* Feature 2: Deadline Tracking */}
           <div className="box time">
             <div className="img-holder">
-              <img decoding="async" src="imgs/features-02.jpg" alt="Deadline Tracking" />
+              <img decoding="async" src="src/components/img/pexels-photo-29218404.webp" alt="Deadline Tracking" />
             </div>
             <h2>Deadline Tracking</h2>
             <p>
@@ -33,7 +33,7 @@ const Features = () => {
           {/* Feature 3: Team Collaboration */}
           <div className="box passion">
             <div className="img-holder">
-              <img decoding="async" src="imgs/features-03.jpg" alt="Team Collaboration" />
+              <img decoding="async" src="src/components/img/pexels-photo-7439137.webp" alt="Team Collaboration" />
             </div>
             <h2>Team Collaboration</h2>
             <p>

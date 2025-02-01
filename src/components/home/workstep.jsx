@@ -11,7 +11,7 @@ const WorkSteps = () => {
             
             {/* Step 1: Login */}
             <div className="box">
-              <img decoding="async" src="imgs/work-steps-1.png" alt="Login" />
+              <img decoding="async" src="src/components/img/login.png" alt="Login" />
               <div className="text">
                 <h3>Login</h3>
                 <p>
@@ -22,7 +22,7 @@ const WorkSteps = () => {
   
             {/* Step 2: Add Tasks */}
             <div className="box">
-              <img decoding="async" src="imgs/work-steps-2.png" alt="Add Tasks" />
+              <img decoding="async" src="src/components/img/add.png" alt="Add Tasks" />
               <div className="text">
                 <h3>Add Tasks</h3>
                 <p>
@@ -33,7 +33,7 @@ const WorkSteps = () => {
   
             {/* Step 3: Set Priorities */}
             <div className="box">
-              <img decoding="async" src="imgs/work-steps-3.png" alt="Set Priorities" />
+              <img decoding="async" src="src/components/img/priority.png" alt="Set Priorities" />
               <div className="text">
                 <h3>Set Priorities</h3>
                 <p>
@@ -44,7 +44,7 @@ const WorkSteps = () => {
   
             {/* Step 4: Track Progress */}
             <div className="box">
-              <img decoding="async" src="imgs/work-steps-4.png" alt="Track Progress" />
+              <img decoding="async" src="src/components/img/development.png" alt="Track Progress" />
               <div className="text">
                 <h3>Track Progress</h3>
                 <p>
