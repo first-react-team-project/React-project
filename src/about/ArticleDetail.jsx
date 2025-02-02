@@ -2,7 +2,8 @@ import { useParams, Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { database, ref, get } from "./firebase";
 import "./ArticleDetail.css";
-
+import Navbar from '../components/home/Navbar'; 
+import Footer from '../components/home/footer';
 const ArticleDetail = () => {
   const { id } = useParams();
   const [article, setArticle] = useState(null);
@@ -35,12 +36,16 @@ const ArticleDetail = () => {
   }
 
   return (
+    <>
+    <Navbar/>
     <div className="article-detail-container">
       {article.image && <img src={article.image} alt={article.title} />}
       <h2>{article.title}</h2>
       <p>{article.content}</p>
       <Link to="/articles" className="back-button">Back to Articles</Link>
     </div>
+    <Footer/>
+    </>
   );
 };
 

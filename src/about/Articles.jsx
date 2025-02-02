@@ -2,7 +2,8 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import "./Articles.css";
-
+import Navbar from '../components/home/Navbar'; 
+import Footer from '../components/home/footer';
 const Articles = () => {
   const [articles, setArticles] = useState([]);
   const [error, setError] = useState(null);
@@ -33,6 +34,7 @@ const Articles = () => {
   }, []);
 
   return (
+    <><Navbar/>
     <div className="articles-container">
       <h2>The most important articles related to our work</h2>
       {error && <p className="error-message">{error}</p>}
@@ -53,6 +55,8 @@ const Articles = () => {
         )}
       </div>
     </div>
+    <Footer/>
+    </>
   );
 };
 

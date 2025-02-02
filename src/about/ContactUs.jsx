@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { database, ref, set } from "./firebase"; 
 import './ContactUs.css';
-
+import Navbar from '../components/home/Navbar'; 
+import Footer from '../components/home/footer';
 const ContactUs = () => {
   // حالة المدخلات
   const [name, setName] = useState("");
@@ -40,6 +41,8 @@ const ContactUs = () => {
   };
 
   return (
+    <>
+    <Navbar/>
     <div className="contact-us-container">
       <div className="contact-form-container">
         <div className="contact-header">
@@ -101,6 +104,7 @@ const ContactUs = () => {
         </div>
       </div>
     </div>
+    <Footer/></>
   );
 };
 
