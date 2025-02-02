@@ -1,22 +1,65 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Login from "./components/Login.jsx";
-import Register from "./components/Register.jsx";
-import Home from "./components/home/home.jsx";
-import UserProfilePage from './UserProfilePage.jsx'
-function App() {
+// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+// import "./index.css";
+// import Login from "./components/Login";
+// import "./App.css";
+
+// const App = () => {
+//   return <>
+//   <Login></Login>
+//   </>;
+// };
+
+// export default App;
+import  { useState } from "react";
+import "./App.css";
+import SignInForm from "./components/Login";
+import SignUpForm from "./components/Register";
+
+export default function App() {
+  const [type, setType] = useState("signIn");
+  const handleOnClick = text => {
+    if (text !== type) {
+      setType(text);
+      return;
+    }
+  };
+  const containerClass =
+    "container " + (type === "signUp" ? "right-panel-active" : "");
   return (
-    <Router>
-      <Routes>
-        {/* تحديد المسارات الخاصة بالصفحات */}
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
-        <Route path="/home" element={<Home />} />
-        <Route path="/UserProfilePage" element={<UserProfilePage />} />
-        {/* <Route path="/UserProfilePage/:userId" element={<UserProfilePage />} /> */}
-      </Routes>
-    </Router>
-  
+    <div className="App">
+      <h2>Sign in/up Form</h2>
+      <div className={containerClass} id="container">
+        <SignUpForm />
+        <SignInForm />
+        <div className="overlay-container">
+          <div className="overlay">
+            <div className="overlay-panel overlay-left">
+              <h1>Welcome Back!</h1>
+              <p>
+                To keep connected with us please login with your personal info
+              </p>
+              <button
+                className="ghost"
+                id="signIn"
+                onClick={() => handleOnClick("signIn")}
+              >
+                Sign In
+              </button>
+            </div>
+            <div className="overlay-panel overlay-right">
+              <h1>Hello, Friend!</h1>
+              <p>Enter your personal details and start journey with us</p>
+              <button
+                className="ghost "
+                id="signUp"
+                onClick={() => handleOnClick("signUp")}
+              >
+                Sign Up
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }
-
-export default App;
