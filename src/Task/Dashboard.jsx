@@ -6,7 +6,9 @@ import { database, ref, get } from '../firebase';  // استيراد Firebase
 const Card = ({ label, count, bg }) => {
     return (
         <Link to='/allTask'>
-            <div className="w-full h-32 bg-white p-5 shadow-md rounded-md flex items-center justify-between cursor-pointer">
+         <div className="w-full md:w-64 h-60 bg-white p-5 shadow-md rounded-md flex flex-col justify-between cursor-pointer">
+
+
                 <div className="h-full flex flex-1 flex-col justify-between">
                     <p className="text-base text-gray-600">{label}</p>
                     <span className="text-2xl font-semibold">{count}</span>
@@ -84,11 +86,11 @@ const Dashboard = () => {
     }, []);
 
     return (
-        <div className="mx-auto w-[80%]">
+        <div className="mx-full w-[80%]">
             <div className="flex flex-col w-full justify-between" >
                 <h1 className="sm:text-2xl text-3xl font-bold my-8 text-center">Tasks</h1>
-                <div className="h-full w-80% mx-auto py-4 px-10">
-                    <div className="grid grid-cols-1 md:grid-cols-4 gap-5 place-item-center">
+                <div className="h-auto w-80% mx-auto py-4 px-10">
+                    <div className="grid grid-cols-1 md:grid-cols-4 gap-4  place-items-center mt-4">
                         {stats.map(({ label, total, bg }, index) => (
                             <Card key={index} bg={bg} label={label} count={total} />
                         ))}
