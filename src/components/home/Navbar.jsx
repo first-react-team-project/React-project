@@ -112,10 +112,10 @@ const Navbar = () => {
             className="group relative text-white text-2xl font-bold tracking-wider transform transition-all duration-300 hover:scale-105"
           >
             <span className="inline-block transform transition-transform group-hover:scale-110">
-              Task
+              Manage
             </span>
             <span className="inline-block ml-2 text-blue-200 transform transition-transform group-hover:scale-110">
-              Management
+            Mate
             </span>
             <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></div>
           </button>
