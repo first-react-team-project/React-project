@@ -10,7 +10,7 @@
 // };
 
 // export default App;
-import React, { useState } from "react";
+import  { useState } from "react";
 import "./App.css";
 import SignInForm from "./components/Login";
 import SignUpForm from "./components/Register";
