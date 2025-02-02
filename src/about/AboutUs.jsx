@@ -1,8 +1,10 @@
 import './AboutUs.css';
-
-
+import Navbar from '../components/home/Navbar'; 
+import Footer from '../components/home/footer';
 const AboutUs = () => {
     return (
+     <>
+     <Navbar/>
       <div className="about-us-container">
         <div className="about-us-content">
           <div className="about-header">
@@ -57,6 +59,8 @@ const AboutUs = () => {
             </div>
           </div>
         </div>
+        <Footer/>
+        </>
     );
   };
   
