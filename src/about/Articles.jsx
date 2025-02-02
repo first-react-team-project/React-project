@@ -34,7 +34,8 @@ const Articles = () => {
   }, []);
 
   return (
-    <><Navbar/>
+    <>
+    <Navbar/>
     <div className="articles-container">
       <h2>The most important articles related to our work</h2>
       {error && <p className="error-message">{error}</p>}

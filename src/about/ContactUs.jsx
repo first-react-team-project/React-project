@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { database, ref, set } from "./firebase"; 
+import { database, ref, set } from "../firebase"; 
 import './ContactUs.css';
 import Navbar from '../components/home/Navbar'; 
 import Footer from '../components/home/footer';
@@ -104,7 +104,8 @@ const ContactUs = () => {
         </div>
       </div>
     </div>
-    <Footer/></>
+    <Footer/>
+    </>
   );
 };
 
