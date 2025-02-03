@@ -15,7 +15,7 @@ const Features = () => {
             <p>
               Easily manage and categorize your tasks with intuitive lists and filters for better workflow efficiency.
             </p>
-            <a href="#">Learn More</a>
+            <a href="https://focuskeeper.co/glossary/what-is-task-organization/">Learn More</a>
           </div>
   
           {/* Feature 2: Deadline Tracking */}
@@ -27,7 +27,7 @@ const Features = () => {
             <p>
               Set due dates and receive reminders to stay on top of your important tasks and deadlines.
             </p>
-            <a href="#">Learn More</a>
+            <a href="https://focuskeeper.co/glossary/what-is-deadline-tracking/">Learn More</a>
           </div>
   
           {/* Feature 3: Team Collaboration */}
@@ -39,7 +39,7 @@ const Features = () => {
             <p>
               Work together with your team by assigning tasks, leaving comments, and tracking progress in real-time.
             </p>
-            <a href="#">Learn More</a>
+            <a href="https://focuskeeper.co/glossary/what-is-team-collaboration/">Learn More</a>
           </div>
   
         </div>

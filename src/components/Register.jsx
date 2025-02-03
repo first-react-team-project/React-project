@@ -340,24 +340,24 @@ const Register = () => {
           <div className="mb-6 relative">
             <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="password">Password</label>
             <input type={showPassword ? "text" : "password"} id="password" name="password" value={formData.password} onChange={handleChange} className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required />
-            <button
+            {/* <button
               type="button"
               onClick={() => setShowPassword(!showPassword)}
               className="eye-icon"
             >
               👁️
-            </button>
+            </button> */}
           </div>
           <div className="mb-6 relative">
             <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="confirmPassword">Confirm Password</label>
             <input type={showConfirmPassword ? "text" : "password"} id="confirmPassword" name="confirmPassword" value={formData.confirmPassword} onChange={handleChange} className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required />
-            <button
+            {/* <button
               type="button"
               onClick={() => setShowConfirmPassword(!showConfirmPassword)}
               className="eye-icon"
             >
               👁️
-            </button>
+            </button> */}
           </div>
           <div className="mb-4">
             <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="role">Role</label>
