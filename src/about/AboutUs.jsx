@@ -24,7 +24,7 @@ const AboutUs = () => {
               </p>
             </div>
             <div className="about-image">
-              <img src="src/about us.jpg" alt="About Us" />
+              <img src="src/about/about us.jpg" alt="About Us" />
             </div>
           </div>
         </div>
@@ -32,27 +32,27 @@ const AboutUs = () => {
           <h3>Our Team</h3>
           <div className="team-members">
             <div className="team-member">
-              <img src="src/women.png" alt="Team Member 1" />
+              <img src="src/about/women.png" alt="Team Member 1" />
               <h4>Raghad Kamal</h4>
               <p>Scrum Master</p>
             </div>
             <div className="team-member">
-              <img src="src/women.png" alt="Team Member 2" />
+              <img src="src/about/women.png" alt="Team Member 2" />
               <h4>Marya Banyan</h4>
               <p>Project owner</p>
             </div>
             <div className="team-member">
-              <img src="src/women.png" alt="Team Member 3" />
+              <img src="src/about/women.png" alt="Team Member 3" />
               <h4>Ahlam Almomani</h4>
               <p>Quality assurance</p>
               </div>
               <div className="team-member">
-              <img src="src/marya r imeges/men.png" alt="Team Member 4" />
+              <img src="src/about/download.png" alt="Team Member 4" />
               <h4>Hareth Jundi</h4>
               <p>Web Developer</p>
             </div>
             <div className="team-member">
-              <img src="src/marya r imeges/men.png" alt="Team Member 5" />
+              <img src="src/about/download.png" alt="Team Member 5" />
               <h4>Mahmoud Suliman</h4>
               <p>Web Developer</p>
             </div>

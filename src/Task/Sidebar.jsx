@@ -55,29 +55,9 @@ const Sidebar = () => {
 
             {/* Navigation Links */}
             <nav className="flex flex-col gap-2 px-4">
-                <Link to='/' className="px-4 py-3 font-semibold text-lg text-white hover:bg-indigo-700 rounded-lg transition duration-300 flex items-center gap-3">
+                <Link to='/AllTasks' className="px-4 py-3 font-semibold text-lg text-white hover:bg-indigo-700 rounded-lg transition duration-300 flex items-center gap-3">
                     <MdDashboard className="text-2xl" />
                     <span className='sm:block hidden'> Dashboard </span>
-                </Link>
-                <Link to='/completeTask' className="px-4 py-3 font-semibold text-lg text-white hover:bg-indigo-700 rounded-lg transition duration-300 flex items-center gap-3">
-                    <MdOutlineTaskAlt className="text-2xl" />
-                    <span className='sm:block hidden'> Completed Tasks ({taskStats.completed}) </span>
-                </Link>
-                <Link to='/pendingTask' className="px-4 py-3 font-semibold text-lg text-white hover:bg-indigo-700 rounded-lg transition duration-300 flex items-center gap-3">
-                    <MdPendingActions className="text-2xl" />
-                    <span className='sm:block hidden'> Pending Tasks ({taskStats.pending}) </span>
-                </Link>
-                <Link to='/inProgressTask' className="px-4 py-3 font-semibold text-lg text-white hover:bg-indigo-700 rounded-lg transition duration-300 flex items-center gap-3">
-                    <GrInProgress className="text-2xl" />
-                    <span className='sm:block hidden'> In Progress Tasks ({taskStats.inProgress}) </span>
-                </Link>
-                <Link to='/deployedTask' className="px-4 py-3 font-semibold text-lg text-white hover:bg-indigo-700 rounded-lg transition duration-300 flex items-center gap-3">
-                    <MdCloudDone className="text-2xl" />
-                    <span className='sm:block hidden'> Deployed Tasks ({taskStats.deployed}) </span>
-                </Link>
-                <Link to='/deferredTask' className="px-4 py-3 font-semibold text-lg text-white hover:bg-indigo-700 rounded-lg transition duration-300 flex items-center gap-3">
-                    <MdOutlineAccessTimeFilled className="text-2xl" />
-                    <span className='sm:block hidden'> Deferred Tasks ({taskStats.deferred}) </span>
                 </Link>
                 <Link to='/addTask' className="px-4 py-3 font-semibold text-lg text-white hover:bg-indigo-700 rounded-lg transition duration-300 flex items-center gap-3">
                     <MdAddTask className="text-2xl" />
@@ -87,7 +67,33 @@ const Sidebar = () => {
                     <MdQueryStats className="text-2xl" />
                     <span className='sm:block hidden'> Task Stats </span>
                 </Link>
+                <Link to='/completeTask' className="px-4 py-3 font-semibold text-lg text-white hover:bg-indigo-700 rounded-lg transition duration-300 flex items-center gap-3">
+                    <MdOutlineTaskAlt className="text-2xl" />
+                    <span className='sm:block hidden'> Completed Tasks </span>
+                </Link>
+                <Link to='/pendingTask' className="px-4 py-3 font-semibold text-lg text-white hover:bg-indigo-700 rounded-lg transition duration-300 flex items-center gap-3">
+                    <MdPendingActions className="text-2xl" />
+                    <span className='sm:block hidden'> Pending Tasks </span>
+                </Link>
+                <Link to='/inProgressTask' className="px-4 py-3 font-semibold text-lg text-white hover:bg-indigo-700 rounded-lg transition duration-300 flex items-center gap-3">
+                    <GrInProgress className="text-2xl" />
+                    <span className='sm:block hidden'> In Progress Tasks </span>
+                </Link>
+                <Link to='/deployedTask' className="px-4 py-3 font-semibold text-lg text-white hover:bg-indigo-700 rounded-lg transition duration-300 flex items-center gap-3">
+                    <MdCloudDone className="text-2xl" />
+                    <span className='sm:block hidden'> Deployed Tasks </span>
+                </Link>
+                <Link to='/deferredTask' className="px-4 py-3 font-semibold text-lg text-white hover:bg-indigo-700 rounded-lg transition duration-300 flex items-center gap-3">
+                    <MdOutlineAccessTimeFilled className="text-2xl" />
+                    <span className='sm:block hidden'> Deferred Tasks </span>
+                </Link>
+                <Link to='/' className="px-4 py-3 font-semibold text-lg text-white hover:bg-indigo-700 rounded-lg transition duration-300 flex items-center gap-3">
+                    <MdDashboard className="text-2xl" />
+                    <span className='sm:block hidden'> Go Back</span>
+                </Link>
+              
             </nav>
+         
         </div>
     );
 };

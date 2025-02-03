@@ -53,7 +53,7 @@ const Home = () => {
                     placeholder="Task Description (optional)"
                 />
                 <button onClick={handleAddTask}>Add Task</button>
-                <TaskList tasks={tasks} />  {/* تم تمرير المهام إلى مكون TaskList */}
+                <TaskList tasks={tasks} /> 
             </div>
         </div>
     );

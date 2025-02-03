@@ -85,7 +85,7 @@ const ContactUs = () => {
             {status && <p className="status-message">{status}</p>}
           </div>
           <div className="contact-image">
-            <img src="src/Contact-Us.jpg" alt="Contact Us" />
+            <img src="src/about/Contact-Us.jpg" alt="Contact Us" />
           </div>
         </div>
         <div className="contact-details">

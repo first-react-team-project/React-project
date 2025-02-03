@@ -37,8 +37,8 @@ const Services = () => {
           <div className="col-md-4 mt-4">
             <div className="card p-4 shadow">
               <i className="fas fa-file-upload fa-3x text-warning mb-3"></i>
-              <h3>File Attachments</h3>
-              <p>Upload and attach files to your tasks effortlessly.</p>
+              <h3>Add Tasks</h3>
+              <p>Upload and add task to your tasks effortlessly.</p>
             </div>
           </div>
   
